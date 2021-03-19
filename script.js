@@ -1,17 +1,11 @@
-//The onmouseover event should use classlist to add a style to an element.
-//The onmouseout event should use classlist to remove a style to an element.
+//Use the map function to manipulate the array above and create 4 list elements dynamically
+const newGirls = document.getElementById('list')
+const techGirls = ['Dami', 'balqees', 'Mary', 'Esther']
 
+let newArr = techGirls.map(function(val, index){
+    return {key: index, value: val}
     
- const button = document.querySelector('.button')
- 
+})
+console.log(newArr)
 
-//on mouseover
-function over(){
-   button.classList.add("items");  
-};
-
-//onmouseout
-function out(){  
-    button.classList.remove('items');
-    };
-
+newGirls.innerHTML = JSON.stringify(newArr)
