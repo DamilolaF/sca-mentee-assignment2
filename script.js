@@ -3,7 +3,7 @@ const newGirls = document.getElementById('list')
 const techGirls = ['Dami', 'balqees', 'Mary', 'Esther']
 
 let newArr = techGirls.map(function(val, index){
-    return {key: index, value: val}
+    return `key: ${index} value: ${val}`
     
 })
 console.log(newArr)
